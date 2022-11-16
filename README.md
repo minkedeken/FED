@@ -57,29 +57,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
+  - Tabs werken niet, er is geen focus state
+  - Screenreader is matig, geen duidelijke links
+  - Met wazig zicht zijn de lettertypes misschien iets te klein
+  - Met parkinson simulatie werkt de site matig
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Met de screenreader was het besturen van de website erg chaotisch. Sommige dingen waren prima uitgewerkt maar de meeste dingen waren niet duidelijk en
+  dus echt niet goed te gebruiken.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Er is helemaal geen focus functie, je kunt de site dus niet bedienen met alleen toetsenbord (tab).
+  Dit kan verbeterd worden door aan alle elementen focus functies toe te voegen.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Tijdens het testen met de shocks kwam ik er achter dat de site wel moeilijk te gebruiken is door kleine links etc. (toevoegen aan verlanglijst bijv.)
+  Dat is op te lossen door misschien de verlanglijst knop verder weg zetten en meer ruimte geven.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Ik kwam er achter dat met een bepaalde bril de kleine tekst een beetje moeilijk te lezen was, dat zou je groter kunnen maken of een duidelijkere kleur
+  kunnen geven.
 
 </details>
 
