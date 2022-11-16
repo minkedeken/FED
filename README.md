@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Minke Deken
 
   #### Je startniveau:
-  Blauw of rood
+  Rood
 
   #### Je focus:
-  Surface plane, maar nog niet zeker
+  Waarschijnlijk surface plane
  
 </details>
 
@@ -36,16 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Loavies site 
-  https://www.loavies.com/nl/?gclsrc=aw.ds&gclid=CjwKCAjwwsmLBhACEiwANq-tXHd1rEb6Jy8CLY_bfHC-b3J-Y1hbldF8_NXR47WAlGuVvlFbfYDzfBoCL6IQAvD_BwE
+  Loavies site, https://www.loavies.com/nl/?gclsrc=aw.ds&gclid=CjwKCAjwwsmLBhACEiwANq-tXHd1rEb6Jy8CLY_bfHC-b3J-Y1hbldF8_NXR47WAlGuVvlFbfYDzfBoCL6IQAvD_BwE
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/IMG_5666.PNG" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Shop pagina  
+  <img src="readme-images/IMG_5667.PNG" alt="shop pagina">
  
 </details>
 
