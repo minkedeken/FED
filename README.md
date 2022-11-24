@@ -118,11 +118,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Minke                 | Mines              | Tamara       | Alexia           |
-  | ---                   | ---                | ---          | ---              |
-  | button over image     | en dit             | en ik dit    | en dan ik dat    |
-  | maar dan responsive   | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | responsiveness screen                  | ...                | ...          | ...              |
+  | Minke                        | Mines              | Tamara       | Alexia           |
+  | ---                          | ---                | ---          | ---              |
+  | button over image responsive | en dit             | en ik dit    | en dan ik dat    |
+  | cards in een article?        | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | responsiveness               | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
