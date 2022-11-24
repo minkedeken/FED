@@ -121,7 +121,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Minke                        | Mines              | Tamara       | Alexia           |
   | ---                          | ---                | ---          | ---              |
   | button over image responsive | en dit             | en ik dit    | en dan ik dat    |
-  | cards in een article?        | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | javascript screen width      | dit als er tijd is | nog een punt | dit wil ik zeker |
   | responsiveness               | ...                | ...          | ...              |
 
 
