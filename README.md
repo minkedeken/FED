@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina  
-  <img src="readme-images/IMG_5666.PNG" width="20%" alt="Home pagina">
+  <img src="readme-images/IMG_5666.PNG" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Shop pagina  
-  <img src="readme-images/IMG_5667.PNG" width="20%" alt="shop pagina">
+  <img src="readme-images/IMG_5667.PNG" alt="shop pagina">
  
 </details>
 
@@ -57,28 +57,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  
-  - Tabs werken niet, er is geen focus state
-  - Screenreader is matig, geen duidelijke links
-  - Met wazig zicht zijn de lettertypes misschien iets te klein
-  - Met parkinson simulatie werkt de site matig
 
   #### Screenreader
-  Met de screenreader was het besturen van de website erg chaotisch. Sommige dingen waren prima uitgewerkt maar de meeste dingen waren niet duidelijk en
-  dus echt niet goed te gebruiken.
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
 
   #### Muis en Toetsenbord 
-  Er is helemaal geen focus functie, je kunt de site dus niet bedienen met alleen toetsenbord (tab).
-  Dit kan verbeterd worden door aan alle elementen focus functies toe te voegen.
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
 
   #### Motoriek (shocks, elastiekjes)
-  Tijdens het testen met de shocks kwam ik er achter dat de site wel moeilijk te gebruiken is door kleine links etc. (toevoegen aan verlanglijst bijv.)
-  Dat is op te lossen door misschien de verlanglijst knop verder weg zetten en meer ruimte geven.
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Ik kwam er achter dat met een bepaalde bril de kleine tekst een beetje moeilijk te lezen was, dat zou je groter kunnen maken of een duidelijkere kleur
-  kunnen geven.
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
 
@@ -90,13 +91,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/helepagina.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/sectie.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -110,17 +108,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  In de eerste 2 weken heb ik een begin gemaakt aan mijn website. Ik was blij verrast over hoe de dingen er uiteindelijk uit kwamen te zien. 
+
+  Ik vind het plaatjes en buttons over afbeeldingen plaatsen nog wel moeilijk, en ik wil graag weten hoe je dit het best kunt doen om de site ook mooi responsive te houden.
+  
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Minke                 | Mines              | Tamara       | Alexia           |
+  | ---                   | ---                | ---          | ---              |
+  | button over image     | en dit             | en ik dit    | en dan ik dat    |
+  | maar dan responsive   | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | responsiveness screen                  | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
