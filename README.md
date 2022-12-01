@@ -122,13 +122,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---                          | ---                | ---          | ---              |
   | button over image responsive | en dit             | en ik dit    | en dan ik dat    |
   | javascript screen width      | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | responsiveness               | ...                | ...          | ...              |
+  | verlanglijstknop             | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - DIV met container? (ga ik misschien doen)
   - punt 2
   - nog een punt
   - ...
@@ -145,16 +145,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik vind het leuk om te coderen en dingen te laten werken maar ik vind het nog wel erg lastig. En dan ben ik soms geneigd om het niet meer leuk te vinden. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Minke     | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | br gebruiken?? | en dit             | en ik dit    | en dan ik dat    |
+  | selector van p | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
@@ -274,7 +274,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
+  1. https://www.w3schools.com/html/html5_video.asp > Gebruikt om een video toe te voegen
   2. bron 2
   3. ...
 
