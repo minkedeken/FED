@@ -161,7 +161,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - br niet, gebruik een li
   - punt 2
   - nog een punt
 - ...

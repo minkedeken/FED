@@ -19,12 +19,19 @@ button, summary {
 :root {
 	/* startje */
 	--tekstKleur:#111;
-	--rozeKleur: #c97494;
+	--rozeKleur: #e43f7e;
 	--buttonKleur: #111;
 	--achtergrondKleur: #fff;
 	--buttontekstKleur: #fff;
 	--afbeeldingTekstKleur: #fff;
+	--tekstKleurBeschrijving: grey;
+	--grijzeAchtergrondKleur: #ededed;
 	--mainFont: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme:dark) { :root {
+	--tekstKleur:#111;
+	}
 }
 
 
@@ -50,6 +57,11 @@ h1, h2, h3, h4, p, a {
 header nav {
 	background-color: var(--achtergrondKleur);
 }
+
+header nav:nth-of-type(2) {
+	background-color: var(--achtergrondKleur);
+}
+
 header nav ul {
 	display: flex;
 	list-style-type: none;
@@ -70,17 +82,26 @@ header nav li:nth-of-type(2){
 	margin-top: 0.5em;
 }
 
-header nav li:nth-of-type(3){ 
+header nav:nth-of-type(2) li:nth-of-type(3){ 
 	font-family: var(--mainFont);
 	text-transform: uppercase;
 	letter-spacing: 0.4em;
 	grid-column: span 4;
 	margin: auto;
 }
+
 header nav a {
 	text-decoration: none;
 	color: var(--tekstKleur);
 }
+
+header nav a:hover {
+	color: var(--rozeKleur);
+}
+
+/*********************/
+/* WERKEND MENU */
+/*********************/
 
 header button img{
 	width: 3.2em;
@@ -92,6 +113,59 @@ header button{
 	padding: 0;
 }
 
+/* open */
+header > button {
+	/* order:-1; */
+	position: relative;
+	z-index: 3;
+}
+
+/* sluit */
+header nav button {
+	z-index: 1;
+}
+
+header nav:nth-of-type(1) {
+	transform:translatex(-100%);
+	transition:transform .3s;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	max-width: 90%;
+	height: 100vh;
+	overflow-y: auto;
+}
+
+header nav.toonMenu {
+	transform:translatex(0);
+}
+
+header nav:nth-of-type(1) ul {
+	display: flex;
+	background-color: var(--achtergrondKleur);
+	max-width: 90%;
+	flex-direction: column;
+}
+
+header nav:nth-of-type(1) ul li a {
+	padding-left: 1em;
+}
+
+header nav:nth-of-type(1) button img {
+	width: 3em;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+header nav:nth-of-type(1) ul li {
+	font-family: var(--mainFont);
+	font-weight: 600;
+	line-height: 3em;
+}
+header nav:nth-of-type(1) ul img {
+	width: 90vw;
+	padding: 0;
+}
 /*********************/
 /* NAVIGATIE 2 */
 /*********************/
@@ -120,7 +194,7 @@ main nav ul li {
 }
 
 main nav ul li a p:hover {
-	color:#c97494;
+	color: var(--rozeKleur);
 }
 
 main nav ul li img {
@@ -143,7 +217,7 @@ main nav ul li img:focus {
 section:nth-of-type(1) h2:nth-of-type(1) {
 	text-align: center;
 	font-size: small;
-	background-color: black;
+	background-color: var(--buttonKleur);
 	color: var(--buttontekstKleur);
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
@@ -177,7 +251,7 @@ section:nth-of-type(1) img {
 main section:nth-of-type(1) button {
 	border: none;
 	background-color: var(--buttonKleur);
-	color: white;
+	color: var(--buttontekstKleur);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: var(--mainFont);
@@ -190,7 +264,7 @@ main section:nth-of-type(1) button {
 
 main section:nth-of-type(1) button:hover {
 	background-color: var(--achtergrondKleur);
-	color: black;
+	color: var(--buttonKleur);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: var(--mainFont);
@@ -237,7 +311,7 @@ main section:nth-of-type(2) {
 
 main section:nth-of-type(2) p:nth-of-type(1) {
 	font-size: small;
-	color: gray;
+	color: var(--tekstKleurBeschrijving);
 	justify-self:baseline ;
 }
 
@@ -272,6 +346,20 @@ main section:nth-of-type(2) button img:nth-of-type(2) {
 	display: none;
 }
 
+@keyframes likeButton-animation {
+	0% {
+	  transform:scale(1);
+	}
+	100% {
+	  transform:scale(2);
+	}
+}
+  
+main section:nth-of-type(2) button.liked img:nth-of-type(2):hover {
+	animation-name:likeButton-animation;
+	animation-duration:1s;
+}
+
 main section:nth-of-type(2) button.liked img:nth-of-type(1) {
 	display: none;
 }
@@ -291,10 +379,11 @@ main section:nth-of-type(2) img:nth-of-type(1) {
 	grid-column: 1/3;
 }
 
-main section:nth-of-type(2) img:nth-of-type(1):hover {
-	width: 12em;
-	grid-column: 1/3;
-}
+/* main section:nth-of-type(2) img:nth-of-type(1):hover {
+	border-style: solid;
+	border-color: var(--rozeKleur);
+	border-width: 0.2em;
+} */
 
 main section:nth-of-type(2) article {
 	display: grid;
@@ -329,12 +418,12 @@ footer p {
 
 footer section button {
 	margin-left: 1em;
-	color: #111;
+	color: var(--tekstKleur);
 	font-weight: 600;
 	text-transform: uppercase;
 	font-family: var(--mainFont);
 	background-color: var(--achtergrondKleur);
-	border-color: #111;
+	border-color: var(--buttonKleur);
 	border-width: 0.1em;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -345,7 +434,7 @@ footer section button {
 footer section button:hover {
 	color: var(--buttontekstKleur);
 	background-color: var(--buttonKleur);
-	border-color: #111;
+	border-color: var(--buttonKleur);
 }
 
 footer nav ul {
@@ -362,6 +451,19 @@ footer nav ul {
 
 footer nav ul li a:hover {
 	font-weight: bold;
+}
+
+footer section:nth-of-type(2) ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	gap: 1em;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
 }
 
 footer section:nth-of-type(2) ul {
@@ -449,7 +551,7 @@ footer section:nth-of-type(2) ul li img{
 .pagina2 main h5 {
 	font-family: var(--mainFont);
 	font-weight: 400;
-	color: black;
+	color: var(--tekstKleur);
 	background-color: #ededed;
 	padding: 1em;
 	margin-left: 1em;
@@ -463,7 +565,7 @@ footer section:nth-of-type(2) ul li img{
 	text-transform: uppercase;
 	font-family: var(--mainFont);
 	background-color: var(--buttonKleur);
-	border-color: #111;
+	border-color: var(--buttonKleur);
 	border-width: 0.1em;
 	border-style: solid;
 	padding-top: 1em;
@@ -475,17 +577,64 @@ footer section:nth-of-type(2) ul li img{
 .pagina2 main button:nth-of-type(2):hover {
 	color: var(--tekstKleur);
 	background-color: var(--achtergrondKleur);
-	border-color: #111;
+	border-color: var(--buttonKleur);
 }
 
 .pagina2 main h3 {
 	margin-top: 2em;
 }
 
+.pagina2 main ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-left: 1em;
+	font-family: var(--mainFont);
+	font-size: small;
+	line-height: 1.5em;
+}
+
+/*********************/
+/* MEER OVER DIT PRODUCT */
+/*********************/
+
+.pagina2 summary {
+	font-family: var(--mainFont);
+	font-weight: 600;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
 /*********************/
 /* COMBINEER MET */
 /*********************/
 
-.Pagina2 main section:nth-of-type(2) article div p {
-	color: peachpuff;
+.pagina2 main section:nth-of-type(2) article div p {
+	padding:0;
 }
+
+/*********************/
+/* KLARNA */
+/*********************/
+
+.pagina2 main section:nth-of-type(3) img {
+	width: 5em;
+}
+
+.pagina2 main section:nth-of-type(3) a {
+	text-decoration: underline;
+}
+
+.pagina2 main section:nth-of-type(3) {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+	border-width: 0.1em;
+	border-style: solid;
+	border-color: var(--grijzeAchtergrondKleur);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+

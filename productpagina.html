@@ -15,9 +15,28 @@
 <body class="pagina2">
     <header>
 		<nav>
+			<button><img src="images/kruis.png" alt="menu"></button>
 			<ul>
-				<li><img src="images/menu.png" alt="menu"></li>
-				<li><img src="images/zoeken.png" alt="zoeken"></li>
+				<li><a href="#">Menu</a></li>
+				<li><img src="images/menuimg.png" alt="menu afbeelding"></li>
+				<li><a href="#">Nieuw 💝</a></li>
+				<li><a href="#">Special prices</a></li>
+				<li><a href="#">Jurken</a></li>
+				<li><a href="#">Truien</a></li>
+				<li><a href="#">Jassen</a></li>
+				<li><a href="#">Broeken</a></li>
+				<li><a href="#">Swimwear</a></li>
+				<li><a href="#">Sportswear</a></li>
+				<li><a href="#">Accessoires</a></li>
+				<li><a href="#">Schoenen</a></li>
+				<li><a href="#">Sale 😍</a></li>
+			</ul>
+		</nav>
+
+		<nav>
+			<ul>
+				<li><button><img src="images/menu.png" alt="menu"></button></li>
+				<li><button><img src="images/zoeken.png" alt="zoeken"></button></li>
 				<li><a href="index.html">Loavies</a></li>
 				<li><img src="images/wishlist.png" alt="wishlist"></li>
 				<li><img src="images/shoppingbag.png" alt="shoppingbag"></li>
@@ -25,9 +44,9 @@
 		</nav>	
 	</header>
 
+
     <main>
         <section>
-            <img src="images/trenchcoat1.webp">
             <img src="images/trenchcoat2.webp">
             <img src="images/trenchcoat3.webp">
             <img src="images/trenchcoat4.webp">
@@ -45,19 +64,25 @@
         <p>Gratis verzending vanaf 50 EUR</p>
         <h5>Dit item is oversized. Liever regular fit? Kies een maat kleiner.</h5>
         <button>Toevoegen</button>
-
-     
-        <h3>Meer over dit product</h3>
-        <p>Deze trenchcoat heeft een knoopsluiting en zakken aan de voorkant, een afneembare ceintuur en een voering.</p>
-        <p>Model informatie: Sophie is 173 cm en draagt maat XS. </p>
-        <p>Kleur: Beige <br>Lengte: 115 cm <br>Materiaal: 100% Polyester <br>Artikelnummer: 17138010500</p>
         
-
+        <!-- code van Sanne -->
+        <details closed>
+            <summary>Meer over dit product</summary>
+            <p>Deze trenchcoat heeft een knoopsluiting en zakken aan de voorkant, een afneembare ceintuur en een voering.</p>
+            <p>Model informatie: Sophie is 173 cm en draagt maat XS. </p>
+            <ul>
+                <li>Kleur: Beige</li>
+                <li>Lengte: 115 cm</li>
+                <li>Materiaal: 100% Polyester</li>
+                <li>Artikelnummer: 17138010500</li>
+            </ul> 
+        </details>
+        
         <h3>Combineer met</h3>
 
         <section> 
 			<article>
-				<img src= "images/blouse1.webp" alt="Beige blouse met strepen">
+				<img src= "images/oorbellen.webp" alt="Fuchsia oorbellen">
 				<div>
 					<h4>Best day of my life</h4>
 					<p>Fuchsia oorbellen</p>
@@ -69,7 +94,7 @@
 				</button>
 			</article>
 			<article>
-				<img src= "images/jeans1.webp" alt="Jeans met split">
+				<img src= "images/jeans2.webp" alt="Jeans met split">
 				<div>
 					<h4>Casual statement</h4>
 					<p>Jeans met split</p>
@@ -81,11 +106,11 @@
 				</button>
 			</article>
 			<article>
-				<img src= "images/trui1.webp" alt="Groene gebreide trui">
+				<img src= "images/blousezebra.webp" alt="Groene zebra blouse">
 				<div>
-					<h4>Feel that way</h4>
-					<p>Groene gebreide trui</p>
-					<p><s>€39,99</s> &nbsp; <b>€31,50</b></p>
+					<h4>Thank me now</h4>
+					<p>Groene zebra blouse</p>
+					<p><b>€39,99</b></p>
 				</div>
 				<button>
 					<img src= "images/verlanglijst1.png" alt="verlanglijst knop">
@@ -93,11 +118,11 @@
 				</button>
 			</article>
 			<article>
-				<img src= "images/pantalon1.webp" alt="Blauwe gestreepte pantalon">
+				<img src= "images/laarzen.webp" alt="Hoge zwarte hakken">
 				<div>
-					<h4>Coffee run</h4>
-					<p>Gestreepte pantalon</p>
-					<p><s>€49,99</s> &nbsp; <b>€31,99</b></p>
+					<h4>Club can't handle me</h4>
+					<p>Zwarte hoge hakken</p>
+					<p><b>€119,00</b></p>
 				</div>
 				<button>
 					<img src= "images/verlanglijst1.png" alt="verlanglijst knop">
@@ -105,6 +130,12 @@
 				</button>
 			</article>
 		</section>
+
+        <section>
+            <img src="images/klarna.png">
+            <p>Shop nu. Betaal in 30 dagen. <a href="#">Meer weten</a></p>
+        </section>
+
     </main>
 
     <footer>
@@ -136,5 +167,6 @@
 			</ul>
 		</section>
 	</footer>
-
+    
+    <script defer src="scripts/script.js"></script>
 </body>
