@@ -126,7 +126,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+
 
   - DIV met container? (ga ik misschien doen)
   - doe geen responsive dus niet nodig
@@ -158,7 +158,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - br niet, gebruik een li
   - class van de body was fout, moest zonder hoofdletter!
@@ -176,7 +175,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  -h1 toevoegen
+  -alt text veranderen voor screenreader
+  -focus en active states toevoegen!!
 
   #### Screenreader
   - geen h1?
@@ -211,7 +212,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Veel ging goed, had gefocust op het verbeteren van de dingen die ik al gemaakt had en wat elementen toegevoegd aan de 2e pagina.
 
 
   ### Agenda voor meeting
@@ -225,7 +226,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - meerdere navs mag
   - andere alt tekst neerzetten
@@ -246,9 +246,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/websitev1.pdf" width="375px" alt="pagina 1">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/websitev2.pdf" width="375px" alt="pagina 2">
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik vond het over het algemeen erg leuk om te doen. Ik ben vooral trots op het feit dat ik flexbox snap nu! Dat snapte ik vorig jaar met internetstandaarden echt totaal niet. Ik ben vooral trots op mijn overflow-x menu. Daarnaast vind ik het leuk dat het werkende menu is gelukt (met wat hulp).
@@ -263,7 +263,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Heel erg responsive met buttons etc.
   -Om de foto's automatisch te laten staan op 1 foto bij de 2e pagina.
 
-  <img src="readme-images/nietgelukt.png" width="375px" alt="bummer">
+  <img src="readme-images/nietgelukt.png" width="375px" alt="niet gelukt">
 </details>
 
 

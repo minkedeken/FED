@@ -848,6 +848,10 @@ footer section:nth-of-type(2) ul li a:focus {
 	text-decoration-style: wavy;
 }
 
+.pagina2 details ul li {
+	color: var(--tekstKleur);
+}
+
 /*********************/
 /* COMBINEER MET */
 /*********************/
