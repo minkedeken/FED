@@ -246,9 +246,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/websitev1.pdf" width="375px" alt="pagina 1">
+  <img src="readme-images/websitev1.png" width="375px" alt="pagina 1">
 
-  <img src="readme-images/websitev2.pdf" width="375px" alt="pagina 2">
+  <img src="readme-images/websitev2.png" width="375px" alt="pagina 2">
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik vond het over het algemeen erg leuk om te doen. Ik ben vooral trots op het feit dat ik flexbox snap nu! Dat snapte ik vorig jaar met internetstandaarden echt totaal niet. Ik ben vooral trots op mijn overflow-x menu. Daarnaast vind ik het leuk dat het werkende menu is gelukt (met wat hulp).
