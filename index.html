@@ -37,9 +37,9 @@
 			<ul>
 				<li><button><img src="images/menu.png" alt="menu"></button></li>
 				<li><button><img src="images/zoeken.png" alt="zoeken"></button></li>
-				<li><a href="index.html">Loavies</a></li>
-				<li><img src="images/wishlist.png" alt="wishlist"></li>
-				<li><img src="images/shoppingbag.png" alt="shoppingbag"></li>
+				<li><h1><a href="index.html">Loavies</a></h1></li>
+				<li><button><img src="images/wishlist.png" alt="wishlist"></button></li>
+				<li><button><img src="images/shoppingbag.png" alt="shoppingbag"></button></li>
 			</ul>
 		</nav>	
 	</header>
@@ -47,14 +47,14 @@
 	<main>
 		<nav>
 			<ul>
-				<li><a href= "#"><img src="images/jurken.jpg" alt="jurken"><p>Jurken</p></a></li>
-				<li><a href= "#"><img src="images/tops.jpg" alt="tops"><p>Tops</p></a></li>
-				<li><a href= "#"><img src="images/truien.jpg" alt="truien"><p>Truien</p></a></li>
-				<li><a href= "#"><img src="images/giftshop.jpg" alt="gift shop"><p>Gift shop</p></a></li>
-				<li><a href= "#"><img src="images/broeken.jpg" alt="broeken"><p>Broeken</p></a></li>
-				<li><a href= "#"><img src="images/jassen.jpg" alt="jassen"><p>Jassen</p></a></li>
-				<li><a href= "#"><img src="images/rokjes.jpg" alt="rokjes"><p>Rokjes</p></a></li>
-				<li><a href= "#"><img src="images/swim.jpg" alt="swim"><p>Swim</p></a></li>
+				<li><a href= "#"><img src="images/jurken.jpg" alt="Vrouw met bruine jurk"><p>Jurken</p></a></li>
+				<li><a href= "#"><img src="images/tops.jpg" alt="Vrouw met zwarte top"><p>Tops</p></a></li>
+				<li><a href= "#"><img src="images/truien.jpg" alt="Vrouw met zebra trui"><p>Truien</p></a></li>
+				<li><a href= "#"><img src="images/giftshop.jpg" alt="Adventkalender"><p>Gift shop</p></a></li>
+				<li><a href= "#"><img src="images/broeken.jpg" alt="Zwarte broek"><p>Broeken</p></a></li>
+				<li><a href= "#"><img src="images/jassen.jpg" alt="Vrouw met teddy jas"><p>Jassen</p></a></li>
+				<li><a href= "#"><img src="images/rokjes.jpg" alt="Glitter rokje"><p>Rokjes</p></a></li>
+				<li><a href= "#"><img src="images/swim.jpg" alt="Vrouw met badpak"><p>Swim</p></a></li>
 			</ul>
 		</nav>
 
@@ -70,7 +70,7 @@
 			<article>
 				<img src= "images/blouse1.webp" alt="Beige blouse met strepen">
 				<div>
-					<h4>The way you move</h4>
+					<a href="#"><h4>The way you move</h4></a>
 					<p>Gestreepte blouse</p>
 					<p><s>€35,99</s> &nbsp; <b>€28,97</b></p>
 				</div>
@@ -82,7 +82,7 @@
 			<article>
 				<img src= "images/jeans1.webp" alt="Jeans met split">
 				<div>
-					<h4>Casual statement</h4>
+					<a href="#"><h4>Casual statement</h4></a>
 					<p>Jeans met split</p>
 					<p><s>€59,99</s> &nbsp; <b>€35,50</b></p>
 				</div>
@@ -94,7 +94,7 @@
 			<article>
 				<img src= "images/trui1.webp" alt="Groene gebreide trui">
 				<div>
-					<h4>Feel that way</h4>
+					<a href="#"><h4>Feel that way</h4></a>
 					<p>Groene gebreide trui</p>
 					<p><s>€39,99</s> &nbsp; <b>€31,50</b></p>
 				</div>
@@ -106,7 +106,7 @@
 			<article>
 				<img src= "images/pantalon1.webp" alt="Blauwe gestreepte pantalon">
 				<div>
-					<h4>Coffee run</h4>
+					<a href="#"><h4>Coffee run</h4></a>
 					<p>Gestreepte pantalon</p>
 					<p><s>€49,99</s> &nbsp; <b>€31,99</b></p>
 				</div>
@@ -130,7 +130,7 @@
 		</section>
 
 		<section>
-			<video controls autoplay playsinline loop muted>
+			<video controls autoplay loop muted>
                 <source src="./videos/Video1.mp4" type="video/mp4">
             </video>
 		</section>
@@ -140,7 +140,13 @@
 		<section>
 			<h3>Sign up for our newsletter</h3>
 			<p>You'll be the first to know about special promotions, new drops, SALE & the latest trends.</p>
-			<button>Aanmelden</button>
+
+			<form action="#">
+				<label for="email">Je e-mailadres</label>
+				<input id="email" type="text">
+				<button aria-label="Verstuur">AANMELDEN</button>
+			</form>
+
 		</section>
 
 		<nav>

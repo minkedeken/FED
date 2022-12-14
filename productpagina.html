@@ -37,9 +37,9 @@
 			<ul>
 				<li><button><img src="images/menu.png" alt="menu"></button></li>
 				<li><button><img src="images/zoeken.png" alt="zoeken"></button></li>
-				<li><a href="index.html">Loavies</a></li>
-				<li><img src="images/wishlist.png" alt="wishlist"></li>
-				<li><img src="images/shoppingbag.png" alt="shoppingbag"></li>
+				<li><h1><a href="index.html">Loavies</a></h1></li>
+				<li><button><img src="images/wishlist.png" alt="wishlist"></button></li>
+				<li><button><img src="images/shoppingbag.png" alt="shoppingbag"></button></li>
 			</ul>
 		</nav>	
 	</header>
@@ -47,10 +47,10 @@
 
     <main>
         <section>
-            <img src="images/trenchcoat2.webp">
-            <img src="images/trenchcoat3.webp">
-            <img src="images/trenchcoat4.webp">
-            <img src="images/trenchcoat5.webp">
+            <img src="images/trenchcoat2.webp" alt="trenchcoat voorkant">
+            <img src="images/trenchcoat3.webp" alt="trenchcoat zijkant">
+            <img src="images/trenchcoat4.webp" alt="trenchcoat voorkant open">
+            <img src="images/trenchcoat5.webp" alt="trenchcoat achterkant">
          </section>
 
         <h3>She is everything</h3>
@@ -66,7 +66,7 @@
         <button>Toevoegen</button>
         
         <!-- code van Sanne -->
-        <details closed>
+        <details>
             <summary>Meer over dit product</summary>
             <p>Deze trenchcoat heeft een knoopsluiting en zakken aan de voorkant, een afneembare ceintuur en een voering.</p>
             <p>Model informatie: Sophie is 173 cm en draagt maat XS. </p>
@@ -84,7 +84,7 @@
 			<article>
 				<img src= "images/oorbellen.webp" alt="Fuchsia oorbellen">
 				<div>
-					<h4>Best day of my life</h4>
+					<a href="#"><h4>Best day of my life</h4></a>
 					<p>Fuchsia oorbellen</p>
 					<p><s>14,99</s> &nbsp; <b>8,99</b></p>
 				</div>
@@ -96,7 +96,7 @@
 			<article>
 				<img src= "images/jeans2.webp" alt="Jeans met split">
 				<div>
-					<h4>Casual statement</h4>
+					<a href="#"><h4>Casual statement</h4></a>
 					<p>Jeans met split</p>
 					<p><s>€59,99</s> &nbsp; <b>€35,50</b></p>
 				</div>
@@ -108,7 +108,7 @@
 			<article>
 				<img src= "images/blousezebra.webp" alt="Groene zebra blouse">
 				<div>
-					<h4>Thank me now</h4>
+					<a href="#"><h4>Thank me now</h4></a>
 					<p>Groene zebra blouse</p>
 					<p><b>€39,99</b></p>
 				</div>
@@ -120,7 +120,7 @@
 			<article>
 				<img src= "images/laarzen.webp" alt="Hoge zwarte hakken">
 				<div>
-					<h4>Club can't handle me</h4>
+					<a href="#"><h4>Club can't handle me</h4></a>
 					<p>Zwarte hoge hakken</p>
 					<p><b>€119,00</b></p>
 				</div>
@@ -132,7 +132,7 @@
 		</section>
 
         <section>
-            <img src="images/klarna.png">
+            <img src="images/klarna.png" alt="klarna">
             <p>Shop nu. Betaal in 30 dagen. <a href="#">Meer weten</a></p>
         </section>
 
@@ -142,7 +142,12 @@
 		<section>
 			<h3>Sign up for our newsletter</h3>
 			<p>You'll be the first to know about special promotions, new drops, SALE & the latest trends.</p>
-			<button>Aanmelden</button>
+			
+            <form action="#">
+				<label for="email">Je e-mailadres</label>
+				<input id="email" type="text">
+				<button aria-label="Verstuur">AANMELDEN</button>
+			</form>
 		</section>
 
 		<nav>
@@ -167,6 +172,6 @@
 			</ul>
 		</section>
 	</footer>
-    
+
     <script defer src="scripts/script.js"></script>
 </body>

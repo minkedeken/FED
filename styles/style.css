@@ -29,14 +29,9 @@ button, summary {
 	--mainFont: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme:dark) { :root {
-	--tekstKleur:#111;
-	}
-}
-
-
 body {
 	margin: 0;
+	color: var(--achtergrondKleur);
 }
 
 
@@ -49,6 +44,7 @@ h1, h2, h3, h4, p, a {
 	color: var(--tekstKleur);
 	text-decoration: none;
 }
+
 
 /*********************/
 /* NAVIGATIE 1 */
@@ -74,12 +70,8 @@ header nav ul li img {
 	width: 2.5em;
 }
 
-header nav li:nth-of-type(1){
-	margin-top: 0.5em;
-}
-
-header nav li:nth-of-type(2){
-	margin-top: 0.5em;
+header nav li{
+	margin-top: 1em;
 }
 
 header nav:nth-of-type(2) li:nth-of-type(3){ 
@@ -93,10 +85,40 @@ header nav:nth-of-type(2) li:nth-of-type(3){
 header nav a {
 	text-decoration: none;
 	color: var(--tekstKleur);
+	font-weight: lighter;
+	font-size: medium;
 }
 
 header nav a:hover {
 	color: var(--rozeKleur);
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+header nav a:focus {
+	color: var(--rozeKleur);
+	font-size: 1.2em;
+	outline: none;
+	font-weight: bold;
+}
+
+header nav a:active {
+	color: var(--rozeKleur);
+	font-size: 1.2em;
+	outline: none;
+	font-weight: bold;
+}
+
+header nav:nth-of-type(2) ul h1 a:hover {
+	font-size: 0.8em;
+}
+
+header nav:nth-of-type(2) ul h1 a:focus {
+	font-size: 0.8em;
+}
+
+header nav:nth-of-type(2) ul h1 a:focus {
+	font-size: 0.8em;
 }
 
 /*********************/
@@ -123,6 +145,19 @@ header > button {
 /* sluit */
 header nav button {
 	z-index: 1;
+	padding-right: 1em;
+	padding-bottom: 0.8em;
+	transition: transform .2s;
+}
+
+header nav button:hover {
+	transform: scale(1.3);
+}
+
+header nav button:focus {
+	border-style: solid;
+	border-width: 0.3em;
+	border-color: var(--rozeKleur);
 }
 
 header nav:nth-of-type(1) {
@@ -197,14 +232,21 @@ main nav ul li a p:hover {
 	color: var(--rozeKleur);
 }
 
+main nav ul li a:focus {
+	border-style: solid;
+	border-width: 0.3em;
+	border-color: var(--rozeKleur);
+	outline: none;
+}
+
 main nav ul li img {
 	width: 6em;
+	transition: transform .2s;
 }
 
 main nav ul li img:hover {
-	width: 6.5em;
+	transform: scale(1.15);
 }
-
 
 main nav ul li img:focus {
 	width: 6.5em;
@@ -265,14 +307,20 @@ main section:nth-of-type(1) button {
 main section:nth-of-type(1) button:hover {
 	background-color: var(--achtergrondKleur);
 	color: var(--buttonKleur);
-	text-transform: uppercase;
-	font-weight: bold;
-	font-family: var(--mainFont);
-	padding-top: 1em;
-	padding-bottom: 1em;
-	grid-row-start: 6;
-	grid-column-start: 2;
-	grid-column-end: span 4;	
+	transition: 0.1s;
+	animation-name: buttonAnimatie;
+	animation-duration: 1s;
+}
+
+main section:nth-of-type(1) button:focus {
+	background-color: var(--rozeKleur);
+	color: var(--afbeeldingTekstKleur);
+	outline: none;
+}
+
+main section:nth-of-type(1) button:active {
+	background-color: var(--rozeKleur);
+	color: var(--afbeeldingTekstKleur);
 }
 
 main section:nth-of-type(1) {
@@ -287,6 +335,15 @@ h3 {
 	margin-bottom: 1em;
 }
 
+@keyframes buttonAnimatie {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(1.5turn);
+	}
+}
+
 /*********************/
 /* CAROUSEL PRODUCTEN */
 /*********************/
@@ -298,6 +355,22 @@ h4 {
 
 h4:hover {
 	color: var(--rozeKleur);
+}
+
+h4:active {
+	color: var(--rozeKleur);
+}
+
+main section:nth-of-type(2) div a:focus h4 {
+	color: var(--rozeKleur);
+}
+
+main section:nth-of-type(2) div a:active h4 {
+	color: var(--rozeKleur);
+}
+
+main section:nth-of-type(2) div a:focus {
+	outline: none;
 }
 
 main section:nth-of-type(2) {
@@ -325,13 +398,29 @@ main section:nth-of-type(2) button {
 	border: none;
 	background-color: var(--achtergrondKleur);
 }
+
 main section:nth-of-type(2) button img:nth-of-type(1) {
 	width: 2em;
 	margin-top: 0.7em;
 	display: block;
 }
 
+main section:nth-of-type(2) button:focus img:nth-of-type(1) {
+	border-style: dotted;
+	border-color: var(--rozeKleur);
+	border-width: 0.3em;
+	width: 2.4em;
+}
+
+main section:nth-of-type(2) button:focus {
+	outline: none;
+}
+
 main section:nth-of-type(2) button:hover img:nth-of-type(1) {
+	width: 2.5em;
+}
+
+main section:nth-of-type(2) button:active img:nth-of-type(1) {
 	width: 2.5em;
 }
 
@@ -339,6 +428,16 @@ main section:nth-of-type(2) button:hover img:nth-of-type(2) {
 	width: 2.5em;
 }
 
+main section:nth-of-type(2) button:active img:nth-of-type(2) {
+	width: 2.5em;
+}
+
+main section:nth-of-type(2) button:focus img:nth-of-type(2) {
+	border-style: dotted;
+	border-color: var(--rozeKleur);
+	border-width: 0.3em;
+	width: 2.4em;
+}
 main section:nth-of-type(2) button img:nth-of-type(2) {
 	width: 2.2em;
 	margin-top: 0.5em;
@@ -358,6 +457,7 @@ main section:nth-of-type(2) button img:nth-of-type(2) {
 main section:nth-of-type(2) button.liked img:nth-of-type(2):hover {
 	animation-name:likeButton-animation;
 	animation-duration:1s;
+
 }
 
 main section:nth-of-type(2) button.liked img:nth-of-type(1) {
@@ -377,17 +477,17 @@ main section:nth-of-type(2) div {
 main section:nth-of-type(2) img:nth-of-type(1) {
 	width: 12em;
 	grid-column: 1/3;
+	transition: transform .1s;
 }
 
-/* main section:nth-of-type(2) img:nth-of-type(1):hover {
-	border-style: solid;
-	border-color: var(--rozeKleur);
-	border-width: 0.2em;
-} */
+main section:nth-of-type(2) img:nth-of-type(1):hover {
+	transform: scale(1.05);
+}
 
 main section:nth-of-type(2) article {
 	display: grid;
 }
+
 
 
 /*********************/
@@ -409,11 +509,53 @@ main section:nth-of-type(3) video {
 footer {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 footer p {
 	padding-left: 1em;
 	font-size: smaller;
+}
+
+form {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 90%;
+	margin: auto;
+}
+
+footer label {
+	font-family: var(--mainFont);
+	font-size: 0.8em;
+	font-weight: bold;
+	padding-right: 70%;
+	padding-bottom: 0.3em;
+	
+}
+
+footer input {
+	padding: 1em;
+	border-style: solid;
+	border-color: var(--grijzeAchtergrondKleur);
+	border-width: 0.1em;
+	margin-bottom: 0.5em;
+}
+
+footer input:hover {
+	background-color: var(--grijzeAchtergrondKleur);
+	transition: 0.2s;
+}
+
+footer input:focus {
+	background-color: var(--grijzeAchtergrondKleur);
+	transition: 0.2s;
+}
+
+footer input:active {
+	background-color: var(--grijzeAchtergrondKleur);
+	transition: 0.2s;
 }
 
 footer section button {
@@ -427,14 +569,27 @@ footer section button {
 	border-width: 0.1em;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding-right: 14em;
-	padding-left: 14em;
+	display: block;
+	margin: 0 auto;
+	width: 100%
 }
 
 footer section button:hover {
 	color: var(--buttontekstKleur);
 	background-color: var(--buttonKleur);
 	border-color: var(--buttonKleur);
+}
+
+footer section button:focus {
+	background-color: var(--rozeKleur);
+	color: var(--buttontekstKleur);
+	outline: none;
+	border: none;
+}
+
+footer section button:active {
+	background-color: var(--rozeKleur);
+	color: var(--buttontekstKleur);
 }
 
 footer nav ul {
@@ -445,12 +600,18 @@ footer nav ul {
 	line-height: 3.5em;
 	font-size: smaller;
 	margin-top: 1.5em;
-	padding-right: 26.8em;
 
 }
 
 footer nav ul li a:hover {
 	font-weight: bold;
+}
+
+footer nav ul li a:focus {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: var(--rozeKleur);
+	outline: none;
 }
 
 footer section:nth-of-type(2) ul {
@@ -482,8 +643,27 @@ footer section:nth-of-type(2) ul {
 
 footer section:nth-of-type(2) ul li img{
 	width: 1em;
+	transition: transform .2s;
 }
 
+footer section:nth-of-type(2) ul li img:hover{
+	transform: scale(2);
+}
+
+footer section:nth-of-type(2) ul li img:active{
+	transform: scale(2);
+}
+
+footer section:nth-of-type(2) ul li a:focus img{
+	width: 2em;
+	border-style: dotted;
+	border-color: var(--rozeKleur);
+	border-width: 0.2em;
+}
+
+footer section:nth-of-type(2) ul li a:focus {
+	outline: none;
+}
 
 /*********************/
 /* PAGINA 2 */
@@ -500,6 +680,7 @@ footer section:nth-of-type(2) ul li img{
 .pagina2 main section:nth-of-type(1) {
 	display: flex;
 	overflow-x: auto;
+	margin-top: 0.2em;
 }
 
 .pagina2 main section img {
@@ -554,12 +735,44 @@ footer section:nth-of-type(2) ul li img{
 	color: var(--tekstKleur);
 	background-color: #ededed;
 	padding: 1em;
-	margin-left: 1em;
-	width: 35em;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	width: 95%;
+}
+
+.pagina2 main h5:hover {
+	background-color: var(--rozeKleur);
+	color: var(--afbeeldingTekstKleur);
+}
+
+.pagina2 main button:nth-of-type(1){
+	margin-left: 0.5em;
+}
+
+.pagina2 main button:nth-of-type(1):hover img{
+	transform: scale(1.1);
+	transition: .3s;
+}
+
+.pagina2 main button:nth-of-type(1):active img{
+	transform: scale(1.1);
+	transition: .3s;
+}
+
+.pagina2 main button:nth-of-type(1):focus img{
+	border-color: var(--rozeKleur);
+	border-style: dotted;
+	border-width: 0.3em;
+	width: 2.4em;
+}
+
+.pagina2 main button:nth-of-type(1):focus {
+	outline: none;
 }
 
 .pagina2 main button:nth-of-type(2) {
-	margin-left: 1em;
+	margin: 0 auto;
 	color: var(--buttontekstKleur);
 	font-weight: 600;
 	text-transform: uppercase;
@@ -570,14 +783,28 @@ footer section:nth-of-type(2) ul li img{
 	border-style: solid;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding-right: 14em;
-	padding-left: 14em;
+	display: block;
+	width: 95%;
 }
 
 .pagina2 main button:nth-of-type(2):hover {
 	color: var(--tekstKleur);
 	background-color: var(--achtergrondKleur);
 	border-color: var(--buttonKleur);
+}
+
+.pagina2 main button:nth-of-type(2):focus {
+	color: var(--buttontekstKleur);
+	background-color: var(--rozeKleur);
+	border: none;
+	outline: none;
+}
+
+.pagina2 main button:nth-of-type(2):active {
+	color: var(--buttontekstKleur);
+	background-color: var(--rozeKleur);
+	border: none;
+	outline: none;
 }
 
 .pagina2 main h3 {
@@ -603,6 +830,22 @@ footer section:nth-of-type(2) ul li img{
 	font-weight: 600;
 	padding-left: 1em;
 	padding-top: 1em;
+	color: var(--tekstKleur);
+}
+
+.pagina2 summary:hover {
+	color: var(--rozeKleur);
+}
+
+.pagina2 summary:active {
+	color: var(--rozeKleur);
+}
+
+.pagina2 summary:focus {
+	color: var(--rozeKleur);
+	outline: none;
+	text-decoration: underline;
+	text-decoration-style: wavy;
 }
 
 /*********************/
@@ -623,6 +866,21 @@ footer section:nth-of-type(2) ul li img{
 
 .pagina2 main section:nth-of-type(3) a {
 	text-decoration: underline;
+}
+
+.pagina2 main section:nth-of-type(3) a:hover {
+	font-weight: bold;
+}
+
+.pagina2 main section:nth-of-type(3) a:focus {
+	font-weight: bold;
+	font-size: 1.1em;
+	color: var(--rozeKleur);
+	outline: none;
+	border-style: dotted;
+	border-color: var(--rozeKleur);
+	text-decoration: none;
+	border-width: 0.3em;
 }
 
 .pagina2 main section:nth-of-type(3) {

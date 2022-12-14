@@ -129,9 +129,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - DIV met container? (ga ik misschien doen)
-  - punt 2
-  - nog een punt
-  - ...
+  - doe geen responsive dus niet nodig
+  - verlanglijstknop gefixt
 
 </details>
 
@@ -155,16 +154,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                | ---          | ---              |
   | br gebruiken?? | en dit             | en ik dit    | en dan ik dat    |
   | selector van p | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  |             | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - br niet, gebruik een li
-  - punt 2
-  - nog een punt
-- ...
+  - class van de body was fout, moest zonder hoofdletter!
+  
 
 </details>
 
@@ -181,27 +179,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - geen h1?
+  - headings volgensmij goed, lijkt me wel. er is alleen geen H1 ergens. weet niet of je die hebt
+  - ze zegt bij de 'stories' bovenin twee keer swim swim omdat de alt tekst van de foto in de a tag ook waarschijnlijk swim is. 
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - zeker goed te doen
+  - in het begin met tabben in het onzichtbare menu.
+  - focus state volgensmij nog niet vormgegeven, zie alleen de basic focus state van apple zelf.
+  - hover state goed!!!!! alles dat interactief is heeft een hover state. 
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - buttons en links groot genoeg, favoriet button misschien wat klein voor mensen met spasmes bv maar de ruimte eromheen die ook reageert maakt dit erg goed.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - ook met kleurenblindheid toegankelijk. Grote contrasten tussen de kleuren dus zichtbaar.
+  - buttons en links groot genoeg, favoriet button misschien wat klein voor mensen met spasmes bv maar de ruimte eromheen die ook reageert maakt dit erg goed.
 
 </details>
 
@@ -221,20 +217,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Minke          | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | meerdere navs  | en dit             | en ik dit    | en dan ik dat    |
+  | dubbele tekst sr| dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - meerdere navs mag
+  - andere alt tekst neerzetten
+  - form
+  - buttons responsive maken
+  - focus en active state
+  
 
 </details>
 
@@ -250,17 +248,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
-
-  ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
+  ### Dit ging goed/Heb ik geleerd: 
+  Ik vond het over het algemeen erg leuk om te doen. Ik ben vooral trots op het feit dat ik flexbox snap nu! Dat snapte ik vorig jaar met internetstandaarden echt totaal niet. Ik ben vooral trots op mijn overflow-x menu. Daarnaast vind ik het leuk dat het werkende menu is gelukt (met wat hulp).
+
+  Ook vind ik de animaties leuk die ik heb geprobeerd.
+
+  <img src="readme-images/werkendmenu.png" width="375px" alt="top">
+  <img src="readme-images/overflowxmenu.png" width="375px" alt="top">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - Darkmode, want ik had voor buttons plaatjes gebruikt dus dat zag er echt heel raar uit. Maar voor de   rest snap ik me de media preference wel hoe dat werkt.
+  - Heel erg responsive met buttons etc.
+  -Om de foto's automatisch te laten staan op 1 foto bij de 2e pagina.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/nietgelukt.png" width="375px" alt="bummer">
 </details>
 
 
@@ -275,7 +278,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
   1. https://www.w3schools.com/html/html5_video.asp > Gebruikt om een video toe te voegen
-  2. bron 2
-  3. ...
+  2. Finn, Ymaro, Vasilis
 
 </details>
